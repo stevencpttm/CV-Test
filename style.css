@@ -1,0 +1,164 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F9F9F9;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 40px;
+}
+
+.logo {
+  font-size: 40px;
+}
+
+ul.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.links li {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.block {
+  margin: 40px 0;
+}
+
+section.intro {
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.self-intro {
+  flex: 1;
+}
+
+.self-intro h2 {
+  font-weight: normal;
+  font-size: 32px;
+  color: #1E2022;
+}
+
+.self-intro p {
+  font-size: 22px;
+  color: #3A3C3F;
+  line-height: 32px;
+}
+
+.graphic {
+  flex: 1;
+}
+
+.graphic img {
+  width: 100%;
+}
+
+.block {
+  margin: 120px 0;
+}
+
+.block h3 {
+  text-align: center;
+  font-size: 32px;
+  color: #2B3763;
+}
+
+.block .features {
+  display: flex;
+}
+
+.block .features .feature {
+  padding: 24px;
+  margin: 12px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 8px 12px #eee;
+  flex: 1;
+}
+
+.block .features .feature.image {
+  padding: 0;
+  box-shadow: none;
+  background-color: inherit;
+  text-align: center;
+}
+
+.block .features .feature.image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.block .features .feature h4 {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.block .features .feature h4 svg {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  margin-right: 12px;
+}
+
+.block .features .feature p {
+  font-size: 18px;
+  color: #585858;
+  line-height: 26px;
+}
+
+footer {
+  text-align: center;
+  color: #636363;
+}
+
+footer .button {
+  background-color: #262626;
+  color: #fff;
+  display: inline-block;
+  border-radius: 12px;
+  padding: 22px 50px;
+  font-size: 26px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer p {
+  margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+  section.intro {
+    flex-direction: column;
+  }
+
+  section.intro .graphic {
+    display: none;
+  }
+
+  .block {
+    margin: 40px 0;
+  }
+
+  .block .features {
+    flex-direction: column;
+  }
+
+  .block .features .feature {
+    margin: 12px 0;
+  }
+}
